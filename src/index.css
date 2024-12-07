@@ -9,6 +9,7 @@
 
 html, body {
   background-color: white;
+  font-family: 'Century Gothic', sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -17,9 +18,9 @@ html, body {
 
 section {
   padding: 1rem;
-   animation: appear linear;
+  animation: appear linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 30%; 
+  animation-range: entry 0% cover 20%; 
 }
 
 .collapse {
