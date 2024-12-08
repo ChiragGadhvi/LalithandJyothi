@@ -138,10 +138,10 @@ function HomeComponent() {
               <li className="nav-item text-end">
                 <a
                   className="fw-medium nav-link active"
-                  href="#magazines"
+                  href="#publishing"
                   onClick={handleLinkClick}
                 >
-                  MAGAZINES
+                  PUBLICATIONS
                 </a>
               </li>
               {/* <li className="nav-item">
@@ -175,7 +175,6 @@ function HomeComponent() {
           data-bs-ride="carousel"
         >
           <div className="carousel-inner">
-            
             <div className="carousel-item active">
               <img
                 loading="lazy"
@@ -210,8 +209,8 @@ function HomeComponent() {
             </div>
           </div>
 
-             {/* Conditionally show arrows only if not mobile */}
-      {/* {!isMobile && (
+          {/* Conditionally show arrows only if not mobile */}
+          {/* {!isMobile && (
         <>
           <button className="carousel-control-prev" aria-label="Previous">
             <span className="carousel-control-prev-icon"></span>
@@ -316,7 +315,7 @@ function HomeComponent() {
               />
             </div>
             <div className="col clientNames text-center mt-1">
-              <span className="fw-medium">ANU & SASHI</span>
+              <span className="fw-medium">ANU AND SASHI'S RESIDENCE</span>
             </div>
           </div>
 
@@ -329,7 +328,9 @@ function HomeComponent() {
               />
             </div>
             <div className="col clientNames text-center mt-1">
-              <span className="fw-medium">SHANTHI & SRINIVAS</span>
+              <span className="fw-medium">
+              ANITA AND HARSHA BHOGLE'S RESIDENCE
+              </span>
             </div>
           </div>
 
@@ -342,7 +343,7 @@ function HomeComponent() {
               />
             </div>
             <div className="col clientNames text-center mt-1">
-              <span className="fw-medium">AZIZ NAGAR</span>
+              <span className="fw-medium">CHARU AND SRINI'S RESIDENCE</span>
             </div>
           </div>
 
@@ -355,7 +356,7 @@ function HomeComponent() {
               />
             </div>
             <div className="col clientNames text-center mt-1">
-              <span className="fw-medium">RAMA & PRADEEP</span>
+              <span className="fw-medium">RAMA AND PRADEEP'S RESIDENCE</span>
             </div>
           </div>
 
@@ -368,7 +369,7 @@ function HomeComponent() {
               />
             </div>
             <div className="col clientNames text-center mt-1">
-              <span className="fw-medium">SHANTHI & SRINIVAS</span>
+              <span className="fw-medium">SHANTI AND SRINIVA'S RESIDENCE</span>
             </div>
           </div>
         </div>
@@ -382,65 +383,63 @@ function HomeComponent() {
         )}
       </section>
 
-      {/* <section id="publishing-section">
-            <div className="text-center mt-2">
-                <h2 id="publishing">PUBLICATIONS</h2>
-                <div className="row d-flex justify-content-center">
-
-                    <div className="col-sm-6">
-                        <div className="card mt-5">
-                            <img loading="lazy" src="/PUBLICATIONS/5.png" className="" />
-                        </div>
-                        <div className="col clientNames text-center mt-1">
-                            <span className="fw-medium">VILLA 18</span>
-                        </div>
-                    </div>
-
-                    <div className="col-sm-6">
-                        <div className="card mt-5">
-                            <img loading="lazy" src="/PUBLICATIONS/2.jpg" className="" />
-                        </div>
-                        <div className="col clientNames text-center mt-1">
-                            <span className="fw-medium">India Today</span>
-                        </div>
-                    </div>
-
-                </div>
-                <div className="row d-flex justify-content-center">
-                    <div className="col-sm-6">
-                        <div className="card mt-5">
-                            <img loading="lazy" src="/PUBLICATIONS/3.jpg" className="" />
-                        </div>
-                        <div className="col clientNames text-center mt-1">
-                            <span className="fw-medium">The Architect's Dairy</span>
-                        </div>
-                    </div>
-
-                    <div className="col-sm-6">
-                        <div className="card mt-5">
-                            <img loading="lazy" src="/PUBLICATIONS/4.jpg" className="" />
-                        </div>
-                        <div className="col clientNames text-center mt-1">
-                            <span className="fw-medium">Archizy</span>
-                        </div>
-                    </div>
-                </div>
-                <div className="row d-flex justify-content-center">
-                    <div className="col-sm-6">
-                        <div className="card mt-5">
-                            <img loading="lazy" src="/PUBLICATIONS/1.jpg" className="" />
-                        </div>
-                        <div className="col clientNames text-center mt-1">
-                            <span className="fw-medium">Good Homes</span>
-                        </div>
-                    </div>
-                </div>
+      <section id="publishing-section">
+        <div className="text-center mt-2">
+          <h2 id="publishing">PUBLICATIONS</h2>
+          <div className="row d-flex justify-content-center">
+            <div className="col-sm-6">
+              <div className="card mt-5">
+                <img loading="lazy" src="/PUBLICATIONS/5.png" className="" />
+              </div>
+              <div className="col clientNames text-center mt-1">
+                <span className="fw-medium">VILLA 18</span>
+              </div>
             </div>
-        </section> */}
 
-      <section id = "magazines" className="magazine-section mt-5">
+            <div className="col-sm-6">
+              <div className="card mt-5">
+                <img loading="lazy" src="/PUBLICATIONS/2.jpg" className="" />
+              </div>
+              <div className="col clientNames text-center mt-1">
+                <span className="fw-medium">India Today</span>
+              </div>
+            </div>
+          </div>
+          <div className="row d-flex justify-content-center">
+            <div className="col-sm-6">
+              <div className="card mt-5">
+                <img loading="lazy" src="/PUBLICATIONS/3.jpg" className="" />
+              </div>
+              <div className="col clientNames text-center mt-1">
+                <span className="fw-medium">The Architect's Dairy</span>
+              </div>
+            </div>
+
+            <div className="col-sm-6">
+              <div className="card mt-5">
+                <img loading="lazy" src="/PUBLICATIONS/4.jpg" className="" />
+              </div>
+              <div className="col clientNames text-center mt-1">
+                <span className="fw-medium">Archizy</span>
+              </div>
+            </div>
+          </div>
+          <div className="row d-flex justify-content-center">
+            <div className="col-sm-6">
+              <div className="card mt-5">
+                <img loading="lazy" src="/PUBLICATIONS/1.jpg" className="" />
+              </div>
+              <div className="col clientNames text-center mt-1">
+                <span className="fw-medium">Good Homes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="magazines" className="magazine-section mt-5">
         <div className="mag-div text-center mt-0">
-          <h2 id="">MAGAZINES</h2>
+          {/* <h2 id="">MAGAZINES</h2> */}
           <div className="row">
             <div className="col-sm-4">
               <div className=" mt-4 card-mag">
@@ -570,7 +569,7 @@ function HomeComponent() {
         </div>
       </section>
 
-      <section id = "contact" className="Contact-section mt-mb-5 ">
+      <section id="contact" className="Contact-section mt-mb-5 ">
         <div className="contactDiv row d-flex justify-content-end m-4 mb-5">
           <div className="col-md-12">
             <div className="mt-4 mt-md-0">
