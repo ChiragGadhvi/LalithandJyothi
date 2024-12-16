@@ -306,20 +306,8 @@ function HomeComponent() {
             </div> */}
 
         <div className="row">
-          <div className="col-sm-4" onClick={() => openModal("AandS")}>
-            <div className="mt-4 card-mag">
-              <img
-                loading="lazy"
-                src="/WORKS1/ANU_SASHI/1.jpg"
-                className="magazine-cover"
-              />
-            </div>
-            <div className="col clientNames text-center mt-1">
-              <span className="fw-medium">ANU AND SASHI'S RESIDENCE</span>
-            </div>
-          </div>
 
-          <div className="col-sm-4" onClick={() => openModal("AandH")}>
+        <div className="col-sm-4" onClick={() => openModal("AandH")}>
             <div className="mt-4 card-mag">
               <img
                 loading="lazy"
@@ -347,6 +335,20 @@ function HomeComponent() {
             </div>
           </div>
 
+          <div className="col-sm-4" onClick={() => openModal("AandS")}>
+            <div className="mt-4 card-mag">
+              <img
+                loading="lazy"
+                src="/WORKS1/ANU_SASHI/1.jpg"
+                className="magazine-cover"
+              />
+            </div>
+            <div className="col clientNames text-center mt-1">
+              <span className="fw-medium">ANU AND SASHI'S RESIDENCE</span>
+            </div>
+          </div>
+
+          
           <div className="col-sm-4" onClick={() => openModal("RandP")}>
             <div className="mt-4 card-mag">
               <img
@@ -369,7 +371,7 @@ function HomeComponent() {
               />
             </div>
             <div className="col clientNames text-center mt-1">
-              <span className="fw-medium">SHANTI AND SRINIVA'S RESIDENCE</span>
+              <span className="fw-medium">SHANTI AND SRINIVAS'S RESIDENCE</span>
             </div>
           </div>
         </div>
@@ -388,59 +390,80 @@ function HomeComponent() {
           <h2 id="publishing">PUBLICATIONS</h2>
           <div className="row d-flex justify-content-center">
             <div className="col-sm-6">
+              <a href="https://www.indiatoday.in/magazine/supplement/story/20240930-harsha-and-anita-bhogles-home-effortless-charm-2602503-2024-09-21">
               <div className="card mt-5">
-                <img loading="lazy" src="/PUBLICATIONS/5.png" className="" />
+                <img loading="lazy" src="/PUBLICATIONS/2.jpg" className="" />
               </div>
+              </a>
               <div className="col clientNames text-center mt-1">
-                <span className="fw-medium">VILLA 18</span>
+                <span className="fw-medium">India Today</span>
               </div>
             </div>
 
             <div className="col-sm-6">
+              <a href="https://www.goodhomes.co.in/home-and-design-trends/centred-around-a-courtyard-this-aziznagar-home-is-breathtaking-9107.html">
               <div className="card mt-5">
-                <img loading="lazy" src="/PUBLICATIONS/2.jpg" className="" />
+                <img loading="lazy" src="/PUBLICATIONS/1.jpg" className="" />
               </div>
+              </a>
               <div className="col clientNames text-center mt-1">
-                <span className="fw-medium">India Today</span>
+                <span className="fw-medium">Good Homes</span>
               </div>
             </div>
           </div>
           <div className="row d-flex justify-content-center">
             <div className="col-sm-6">
+              <a href="https://thearchitectsdiary.com/this-hyderabad-house-harmonizes-two-distinct-units-lalith-and-jyothi-architects/">
               <div className="card mt-5">
-                <img loading="lazy" src="/PUBLICATIONS/3.jpg" className="" />
+                <img loading="lazy" src="/PUBLICATIONS/6.jpg" className="" />
               </div>
+              </a>
               <div className="col clientNames text-center mt-1">
                 <span className="fw-medium">The Architect's Dairy</span>
               </div>
             </div>
 
             <div className="col-sm-6">
+              <a href="">
               <div className="card mt-5">
-                <img loading="lazy" src="/PUBLICATIONS/4.jpg" className="" />
+                <img loading="lazy" src="/PUBLICATIONS/3.jpg" className="" />
               </div>
+              </a>
               <div className="col clientNames text-center mt-1">
-                <span className="fw-medium">Archizy</span>
+                <span className="fw-medium">The Architect's Dairy</span>
               </div>
             </div>
           </div>
           <div className="row d-flex justify-content-center">
             <div className="col-sm-6">
+              <a href="https://architizer.com/projects/villa-18/">
               <div className="card mt-5">
-                <img loading="lazy" src="/PUBLICATIONS/1.jpg" className="" />
+                <img loading="lazy" src="/PUBLICATIONS/5.png" className="" />
               </div>
+              </a>
               <div className="col clientNames text-center mt-1">
-                <span className="fw-medium">Good Homes</span>
+                <span className="fw-medium">Architizer</span>
+              </div>
+            </div>
+            <div className="col-sm-6">
+              <a href="https://www.archizy.com/magazines/archana-and-ramanas-house-by-lalith-and-jyothi-architects">
+              <div className="card mt-5">
+                <img loading="lazy" src="/PUBLICATIONS/4.jpg" className="" />
+              </div>
+              </a>
+              <div className="col clientNames text-center mt-1">
+                <span className="fw-medium">Archizy</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="magazines" className="magazine-section mt-5">
+      <section id="magazines" className="magazine-section">
         <div className="mag-div text-center mt-0">
           {/* <h2 id="">MAGAZINES</h2> */}
           <div className="row">
+
             <div className="col-sm-4">
               <div className=" mt-4 card-mag">
                 <img
@@ -451,22 +474,28 @@ function HomeComponent() {
               </div>
             </div>
             <div className="col-sm-4">
+              <a href="https://www.goodhomes.co.in/home-and-design-trends/centred-around-a-courtyard-this-aziznagar-home-is-breathtaking-9107.html">
               <div className=" mt-4 card-mag">
                 <img
                   loading="lazy"
-                  src="/MAGAZINES/MAGAZINES/HOME-AND-DEISGN-TRENDS/0.jpg"
+                  src="/MAGAZINES/MAGAZINES/HOME-AND-DEISGN-TRENDS/5.jpg"
                   className="magazine-cover"
                 />
               </div>
+              </a>
+
             </div>
+
             <div className="col-sm-4">
+              <a href="https://www.indiatoday.in/magazine/supplement/story/20240930-harsha-and-anita-bhogles-home-effortless-charm-2602503-2024-09-21">
               <div className=" mt-4 card-mag">
                 <img
                   loading="lazy"
-                  src="/MAGAZINES/MAGAZINES/INDIAN-TODAY-HOMES/1.jpg"
+                  src="/MAGAZINES/MAGAZINES/INDIAN-TODAY-HOMES/4.jpg"
                   className="magazine-cover"
                 />
               </div>
+              </a>
             </div>
           </div>
         </div>
@@ -519,31 +548,46 @@ function HomeComponent() {
         </section> */}
 
       <section className="profile-section mb-5">
-        <div className="row mt-4 d-flex justify-content-center text-center ">
+        <div className="row mt-2 p-1 d-flex justify-content-center text-center ">
           <h2 id="profile">PROFILE</h2>
-          <div className="card mt-4 profile-card" style={{ width: "35vw" }}>
+          <div className="card mt-2 p-0 profile-card" style={{ width: "35vw" }}>
             <img
               loading="lazy"
-              src="/MAGAZINES/MAGAZINES/HOME-AND-DEISGN-TRENDS/0.jpg"
-              className="card-img-top "
+              src="/MAGAZINES/MAGAZINES/HOME-AND-DEISGN-TRENDS/pp2.jpg"
+              // className="card-img-top "
               alt="..."
             />
-            <div className="card-body">
-              <h5 className="card-title">JYOTHIRMAYI MITTA</h5>
+            <div className="card-body text-start p-2 pt-3">
+              <h5 className="card-title">Lalith and Jyothi</h5>
               <figcaption className="blockquote-footer mt-1">
-                <cite title="Source Title">Architect</cite>
+                <cite title="Source Title">Architects</cite>
               </figcaption>
-              <p className="card-text fw-medium ">
+              <p className="card-text fw-medium" style={{textAlign: "justify"}}>
+                <em>
+                A practice invested in crafting meaningful spaces was initiated in the year 1994. In the past three decades, we have worked on residential, commercial, and hospitality projects of varying scales. Our practice is stationed at the conflux of culture, craft, and architecture, capturing the intangibles that impact people. All our projects are a culmination of this understanding that we share with each of our clients and collaborators.
+
+
+We believe that every project comes in with an established context and our responses to them - which is a process in itself - leads to its understanding and to derive solutions which transcend into materiality. This process of decoding the intangibles is something that we completely thrive on and celebrate. 
+
+
+Ours is a versatile client portfolio consisting of multinational companies, educational institutes, individuals with varied backgrounds - from business leaders to film personalities - entrepreneurs to influencers. Aligning with our larger purposes of engaging in collaborations to make meaningful spaces - we do get actively involved with the NGOs as well - for pro-bono work.in  
+
+Our work has been featured in print and digitally across various publications. We derive meaning and joy in our journey and consider every project as an opportunity to learn and grow.
+                </em>
+              </p>
+            </div>
+          </div>
+
+          {/* <p className="card-text fw-medium ">
                 <em>
                   Graduate in architecture from the university college of
                   architecture - Andhra university. Craft centric design
                   approach. Weaves spaces with diverse complexities of material
                   and textures.
                 </em>
-              </p>
-            </div>
-          </div>
-          <div className="card mt-4 profile-card" style={{ width: "35vw" }}>
+              </p> */}
+
+          {/* <div className="card mt-4 profile-card" style={{ width: "35vw" }}>
             <img
               loading="lazy"
               src="/MAGAZINES/MAGAZINES/HOME-AND-DEISGN-TRENDS/0.jpg"
@@ -565,13 +609,14 @@ function HomeComponent() {
                 </em>
               </p>
             </div>
-          </div>
+          </div> */}
+
         </div>
       </section>
 
       <section id="contact" className="Contact-section mt-mb-5 ">
         <div className="contactDiv row d-flex justify-content-end m-4 mb-5">
-          <div className="col-md-12">
+          <div className="col-md-12 m-0 p-0">
             <div className="mt-4 mt-md-0">
               <h2>Contact</h2>
               <div className="d-flex align-items-center mt-3">
