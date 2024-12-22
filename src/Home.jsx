@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import ImagePopup from "./ImagePopup";
 import ImagePopupDesktop from "./ImagePopupDesktop";
 
-
 function HomeComponent() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -14,6 +13,22 @@ function HomeComponent() {
     setIsOpen(false);
   };
 
+  const AandS_Web = Array.from(
+    { length: 34 },
+    (_, index) => `/WORKS/ANU_SASHI/${index + 1}.jpg`
+  );
+  const CandS_Web = Array.from(
+    { length: 58 },
+    (_, index) => `/WORKS/CHARU-SRINIVASAN/${index + 1}.jpg`
+  );
+  const RandP_Web = Array.from(
+    { length: 52 },
+    (_, index) => `/WORKS/RAMA-PRADEEP/${index + 1}.jpg`
+  );
+  const SandS_Web = Array.from(
+    { length: 64 },
+    (_, index) => `/WORKS/SHANTHI-SRINIVAS/${index + 1}.jpg`
+  );
   const AandS = Array.from(
     { length: 6 },
     (_, index) => `/WORKS1/ANU_SASHI/${index + 1}.jpg`
@@ -56,6 +71,18 @@ function HomeComponent() {
         break;
       case "RandP":
         setModalData({ images: RandP });
+        break;
+      case "AandS_Web":
+        setModalData({ images: AandS_Web });
+        break;
+      case "CandS_Web":
+        setModalData({ images: CandS_Web });
+        break;
+      case "RandP_Web":
+        setModalData({ images: RandP_Web });
+        break;
+      case "SandS_Web":
+        setModalData({ images: SandS_Web });
         break;
       default:
         setModalData(null);
@@ -167,7 +194,6 @@ function HomeComponent() {
           </div>
         </div>
       </nav>
-
       <section className="carosel-section p-0">
         <div
           className="carousel slide"
@@ -179,7 +205,7 @@ function HomeComponent() {
             <div className="carousel-item active">
               <img
                 loading="lazy"
-                src={isMobile ? "/01.jpg" : "/1.jpg"}
+                src={isMobile ? "/MOBILE/1.jpg" : "/WEB/1.jpg"}
                 className="d-block w-100"
                 alt="Slide 1"
               />
@@ -187,7 +213,7 @@ function HomeComponent() {
             <div className="carousel-item" data-bs-interval="2000">
               <img
                 loading="lazy"
-                src={isMobile ? "/mobile2.jpeg" : "/2.jpg"}
+                src={isMobile ? "/MOBILE/2.jpeg" : "/WEB/2.jpg"}
                 className="d-block w-100"
                 alt="Slide 2"
               />
@@ -195,7 +221,7 @@ function HomeComponent() {
             <div className="carousel-item">
               <img
                 loading="lazy"
-                src={isMobile ? "/Mobile1.jpeg" : "/3.jpg"}
+                src={isMobile ? "/MOBILE/3.jpeg" : "/WEB/3.jpg"}
                 className="d-block w-100"
                 alt="Slide 3"
               />
@@ -203,24 +229,88 @@ function HomeComponent() {
             <div className="carousel-item">
               <img
                 loading="lazy"
-                src={isMobile ? "/mobile3.jpeg" : "/1.jpg"}
+                src={isMobile ? "/MOBILE/4.jpg" : "/WEB/4.jpg"}
                 className="d-block w-100"
                 alt="Slide 4"
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                loading="lazy"
+                src={isMobile ? "/MOBILE/5.jpg" : "/WEB/5.jpg"}
+                className="d-block w-100"
+                alt="Slide 5"
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                loading="lazy"
+                src={isMobile ? "/MOBILE/6.jpg" : "/WEB/6.jpg"}
+                className="d-block w-100"
+                alt="Slide 6"
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                loading="lazy"
+                src={isMobile ? "/MOBILE/7.jpg" : "/WEB/7.jpg"}
+                className="d-block w-100"
+                alt="Slide 7"
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                loading="lazy"
+                src={isMobile ? "/MOBILE/8.jpg" : "/WEB/8.jpg"}
+                className="d-block w-100"
+                alt="Slide 8"
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                loading="lazy"
+                src={isMobile ? "/MOBILE/9.jpg" : "/WEB/9.jpg"}
+                className="d-block w-100"
+                alt="Slide 9"
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                loading="lazy"
+                src={isMobile ? "/MOBILE/10.jpg" : "/WEB/10.jpg"}
+                className="d-block w-100"
+                alt="Slide 10"
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                loading="lazy"
+                src={isMobile ? "/MOBILE/11.jpg" : "/WEB/11.jpg"}
+                className="d-block w-100"
+                alt="Slide 11"
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                loading="lazy"
+                src={isMobile ? "/MOBILE/12.jpeg" : "/WEB/12.jpg"}
+                className="d-block w-100"
+                alt="Slide 12"
               />
             </div>
           </div>
 
           {/* Conditionally show arrows only if not mobile */}
-           {!isMobile && (
-        <>
-          <button className="carousel-control-prev" aria-label="Previous">
-            <span className="carousel-control-prev-icon"></span>
-          </button>
-          <button className="carousel-control-next" aria-label="Next">
-            <span className="carousel-control-next-icon"></span>
-          </button>
-        </>
-      )} 
+          {/* {!isMobile && (
+            <>
+              <button className="carousel-control-prev" aria-label="Previous">
+                <span className="carousel-control-prev-icon"></span>
+              </button>
+              <button className="carousel-control-next" aria-label="Next">
+                <span className="carousel-control-next-icon"></span>
+              </button>
+            </>
+          )} */}
 
           <button
             className="carousel-control-prev"
@@ -228,7 +318,7 @@ function HomeComponent() {
             data-bs-target="#carouselDemo"
             data-bs-slide="prev"
           >
-             <span className="carousel-control-prev-icon"></span> 
+            <span className="carousel-control-prev-icon"></span>
           </button>
           <button
             className="carousel-control-next"
@@ -236,7 +326,7 @@ function HomeComponent() {
             data-bs-target="#carouselDemo"
             data-bs-slide="next"
           >
-           <span className="carousel-control-next-icon"></span> 
+            <span className="carousel-control-next-icon"></span>
           </button>
           <div className="carousel-indicators">
             <button
@@ -260,126 +350,208 @@ function HomeComponent() {
               data-bs-target="#carouselDemo"
               data-bs-slide-to="3"
             ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselDemo"
+              data-bs-slide-to="4"
+              style={{ display: "none" }}
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselDemo"
+              data-bs-slide-to="5"
+              style={{ display: "none" }}
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselDemo"
+              data-bs-slide-to="6"
+              style={{ display: "none" }}
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselDemo"
+              data-bs-slide-to="7"
+              style={{ display: "none" }}
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselDemo"
+              data-bs-slide-to="8"
+              style={{ display: "none" }}
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselDemo"
+              data-bs-slide-to="9"
+              style={{ display: "none" }}
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselDemo"
+              data-bs-slide-to="10"
+              style={{ display: "none" }}
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselDemo"
+              data-bs-slide-to="11"
+              style={{ display: "none" }}
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselDemo"
+              data-bs-slide-to="12"
+              style={{ display: "none" }}
+            ></button>
           </div>
         </div>
       </section>
-
       <section className="works-section">
         <div className="text-center">
           <h2 id="work">WORKS</h2>
         </div>
         {!isMobile ? (
-        
-        <div className="row">
-                 <div className="col-sm-6">
-                    <div className="card mt-4" onClick={() => openModal('AandS')}>
-                        <img loading="lazy" src="/WORKS/ANU-SHASHI/27.jpg" className="img-fluid" alt="ANU & SASHI" />
-                    </div>
-                    <div className="col clientNames text-center mt-1">
-                        <span className="fw-medium">ANU & SASHI</span>
-                    </div>
-                </div>
-
-                <div className="col-sm-6">
-                    <div className="card mt-4" onClick={() => openModal('CharuSrini')}>
-                        <img loading="lazy" src="/WORKS/CHARU-SRINIVASAN/home.jpg" className="" />
-                    </div>
-                    <div className="col clientNames text-center mt-1">
-                        <span className="fw-medium">CHARU & SRINIVAS</span>
-                    </div>
-                </div>
-
-                <div className="col-sm-6">
-                    <div className="card mt-4" onClick={() => openModal('RamaPradeep')}>
-                        <img loading="lazy" src="/WORKS/RAMA-PRADEEP/home.jpg" className="" />
-                    </div>
-                    <div className="col clientNames text-center mt-1">
-                        <span className="fw-medium">RAMA & PRADEEP</span>
-                    </div>
-                </div>
-
-                <div className="col-sm-6">
-                    <div className="card mt-4" onClick={() => openModal('ShanthiSrini')}>
-                        <img loading="lazy" src="/WORKS/SHANTHI-SRINIVAS/home.jpg" className="" />
-                    </div>
-                    <div className="col clientNames text-center mt-1">
-                        <span className="fw-medium">SHANTHI & SRINIVAS</span>
-                    </div>
-                </div>
-            </div>
-
-            
-        ):(
           <div className="row">
-
-          <div className="col-sm-4" onClick={() => openModal("AandH")}>
-            <div className="mt-4 card-mag">
-              <img
-                loading="lazy"
-                src="/WORKS1/ANITHA_HARSHA/1.jpg"
-                className="magazine-cover"
-              />
+            <div className="col-sm-6">
+              <div className="card mt-4" onClick={() => openModal("AandS_Web")}>
+                <img
+                  loading="lazy"
+                  src="/WORKS/ANU_SASHI/27.jpg"
+                  className="img-fluid"
+                  alt="ANU & SASHI"
+                />
+              </div>
+              <div className="col clientNames text-center mt-1">
+                <span className="fw-medium">ANU & SASHI</span>
+              </div>
             </div>
-            <div className="col clientNames text-center mt-1">
-              <span className="fw-medium">
-                ANITA AND HARSHA BHOGLE&apos;S RESIDENCE
-              </span>
+
+            <div className="col-sm-6">
+              <div
+                className="card mt-4"
+                onClick={() => openModal("CandS_Web")}
+              >
+                <img
+                  loading="lazy"
+                  src="/WORKS/CHARU-SRINIVASAN/home.jpg"
+                  className=""
+                />
+              </div>
+              <div className="col clientNames text-center mt-1">
+                <span className="fw-medium">CHARU & SRINIVAS</span>
+              </div>
+            </div>
+
+            <div className="col-sm-6">
+              <div
+                className="card mt-4"
+                onClick={() => openModal("RandP_Web")}
+              >
+                <img
+                  loading="lazy"
+                  src="/WORKS/RAMA-PRADEEP/home.jpg"
+                  className=""
+                />
+              </div>
+              <div className="col clientNames text-center mt-1">
+                <span className="fw-medium">RAMA & PRADEEP</span>
+              </div>
+            </div>
+
+            <div className="col-sm-6">
+              <div
+                className="card mt-4"
+                onClick={() => openModal("SandS_Web")}
+              >
+                <img
+                  loading="lazy"
+                  src="/WORKS/SHANTHI-SRINIVAS/home.jpg"
+                  className=""
+                />
+              </div>
+              <div className="col clientNames text-center mt-1">
+                <span className="fw-medium">SHANTHI & SRINIVAS</span>
+              </div>
             </div>
           </div>
-
-          <div className="col-sm-4" onClick={() => openModal("AN")}>
-            <div className="mt-4 card-mag">
-              <img
-                loading="lazy"
-                src="/WORKS1/AZIZ_NAGAR/1.jpg"
-                className="magazine-cover"
-              />
+        ) : (
+          <div className="row">
+            <div className="col-sm-4" onClick={() => openModal("AandH")}>
+              <div className="mt-4 card-mag">
+                <img
+                  loading="lazy"
+                  src="/WORKS1/ANITHA_HARSHA/1.jpg"
+                  className="magazine-cover"
+                />
+              </div>
+              <div className="col clientNames text-center mt-1">
+                <span className="fw-medium">
+                  ANITA AND HARSHA BHOGLE&apos;S RESIDENCE
+                </span>
+              </div>
             </div>
-            <div className="col clientNames text-center mt-1">
-              <span className="fw-medium">CHARU AND SRINI&apos;S RESIDENCE</span>
+
+            <div className="col-sm-4" onClick={() => openModal("AN")}>
+              <div className="mt-4 card-mag">
+                <img
+                  loading="lazy"
+                  src="/WORKS1/AZIZ_NAGAR/1.jpg"
+                  className="magazine-cover"
+                />
+              </div>
+              <div className="col clientNames text-center mt-1">
+                <span className="fw-medium">
+                  CHARU AND SRINI&apos;S RESIDENCE
+                </span>
+              </div>
+            </div>
+
+            <div className="col-sm-4" onClick={() => openModal("AandS")}>
+              <div className="mt-4 card-mag">
+                <img
+                  loading="lazy"
+                  src="/WORKS1/ANU_SASHI/1.jpg"
+                  className="magazine-cover"
+                />
+              </div>
+              <div className="col clientNames text-center mt-1">
+                <span className="fw-medium">
+                  ANU AND SASHI&apos;S RESIDENCE
+                </span>
+              </div>
+            </div>
+
+            <div className="col-sm-4" onClick={() => openModal("RandP")}>
+              <div className="mt-4 card-mag">
+                <img
+                  loading="lazy"
+                  src="/WORKS1/RAMA_PRADEEP/1.jpg"
+                  className="magazine-cover"
+                />
+              </div>
+              <div className="col clientNames text-center mt-1">
+                <span className="fw-medium">
+                  RAMA AND PRADEEP&apos;S RESIDENCE
+                </span>
+              </div>
+            </div>
+
+            <div className="col-sm-4" onClick={() => openModal("SandS")}>
+              <div className="mt-4 card-mag">
+                <img
+                  loading="lazy"
+                  src="/WORKS1/SHANTHI_SRINIVAS/1.jpg"
+                  className="magazine-cover"
+                />
+              </div>
+              <div className="col clientNames text-center mt-1">
+                <span className="fw-medium">
+                  SHANTI AND SRINIVAS&apos;S RESIDENCE
+                </span>
+              </div>
             </div>
           </div>
-
-          <div className="col-sm-4" onClick={() => openModal("AandS")}>
-            <div className="mt-4 card-mag">
-              <img
-                loading="lazy"
-                src="/WORKS1/ANU_SASHI/1.jpg"
-                className="magazine-cover"
-              />
-            </div>
-            <div className="col clientNames text-center mt-1">
-              <span className="fw-medium">ANU AND SASHI&apos;S RESIDENCE</span>
-            </div>
-          </div>
-
-
-          <div className="col-sm-4" onClick={() => openModal("RandP")}>
-            <div className="mt-4 card-mag">
-              <img
-                loading="lazy"
-                src="/WORKS1/RAMA_PRADEEP/1.jpg"
-                className="magazine-cover"
-              />
-            </div>
-            <div className="col clientNames text-center mt-1">
-              <span className="fw-medium">RAMA AND PRADEEP&apos;S RESIDENCE</span>
-            </div>
-          </div>
-
-          <div className="col-sm-4" onClick={() => openModal("SandS")}>
-            <div className="mt-4 card-mag">
-              <img
-                loading="lazy"
-                src="/WORKS1/SHANTHI_SRINIVAS/1.jpg"
-                className="magazine-cover"
-              />
-            </div>
-            <div className="col clientNames text-center mt-1">
-              <span className="fw-medium">SHANTI AND SRINIVAS&apos;S RESIDENCE</span>
-            </div>
-          </div>
-        </div>
         )}
 
         {modalData && (
@@ -398,7 +570,7 @@ function HomeComponent() {
           />
         )}
       </section>
-
+      
       <section id="publishing-section">
         <div className="text-center mt-2">
           <h2 id="publishing">PUBLICATIONS</h2>
@@ -472,12 +644,10 @@ function HomeComponent() {
           </div>
         </div>
       </section>
-
       <section id="magazines" className="magazine-section ">
-        <div className="mag-div text-center mt-0" >
+        <div className="mag-div text-center mt-0">
           {/* <h2 id="">MAGAZINES</h2> */}
           <div className="row d-flex justify-content-center">
-
             {/* <div className="col-sm-4" style={{display:"none"}}>
               <div className=" mt-4 card-mag">
                 <img
@@ -497,7 +667,6 @@ function HomeComponent() {
                   />
                 </div>
               </a>
-
             </div>
 
             <div className="col-sm-4">
@@ -514,7 +683,7 @@ function HomeComponent() {
           </div>
         </div>
       </section>
-
+      
       {/* <section className="blogs-section mt-5" >
             <div className="blog-div text-center mt-0">
                 <h2 id="blog">BLOGS</h2>
@@ -560,11 +729,18 @@ function HomeComponent() {
 
 
         </section> */}
-
       <section className="profile-section">
         <div className="row mt-2 p-1 d-flex justify-content-center text-center">
           <h2 id="profile">PROFILE</h2>
-          <div className="card mt-2 p-0 profile-card m-2" style={{width: "fit-content",height:"fit-content",display:"inline-block",margin:"auto"}}>
+          <div
+            className="card mt-2 p-0 profile-card m-2"
+            style={{
+              width: "fit-content",
+              height: "fit-content",
+              display: "inline-block",
+              margin: "auto",
+            }}
+          >
             <div className="row g-0">
               {/* Image Section */}
               <div className="col-md-4">
@@ -573,7 +749,10 @@ function HomeComponent() {
                   loading="lazy"
                   src="/MAGAZINES/MAGAZINES/HOME-AND-DEISGN-TRENDS/pp2.jpg"
                   alt="..."
-                  style={{ height: isMobile ? "100%" : "80vh",objectFit: "cover"}}
+                  style={{
+                    height: isMobile ? "100%" : "80vh",
+                    objectFit: "cover",
+                  }}
                 />
               </div>
               {/* Text Section */}
@@ -585,39 +764,39 @@ function HomeComponent() {
                   </figcaption>
                   <p
                     className="card-text fw-medium"
-                    style={{ textAlign: "justify",marginRight:isMobile?"auto":"3rem" }}
+                    style={{
+                      textAlign: "justify",
+                      marginRight: isMobile ? "auto" : "3rem",
+                    }}
                   >
-                      A practice invested in crafting meaningful spaces was initiated in
-                      the year 1994. In the past three decades, we have worked on
-                      residential, commercial, and hospitality projects of varying
-                      scales. Our practice is stationed at the conflux of culture, craft,
-                      and architecture, capturing the intangibles that impact people. All
-                      our projects are a culmination of this understanding that we share
-                      with each of our clients and collaborators.
-
-                      We believe that every project comes in with an established context
-                      and our responses to them - which is a process in itself - leads to
-                      its understanding and to derive solutions which transcend into
-                      materiality. This process of decoding the intangibles is something
-                      that we completely thrive on and celebrate.
-
-                      Ours is a versatile client portfolio consisting of multinational
-                      companies, educational institutes, individuals with varied
-                      backgrounds - from business leaders to film personalities -
-                      entrepreneurs to influencers. Aligning with our larger purposes of
-                      engaging in collaborations to make meaningful spaces - we do get
-                      actively involved with the NGOs as well - for pro-bono work.
-
-                      Our work has been featured in print and digitally across various
-                      publications. We derive meaning and joy in our journey and consider
-                      every project as an opportunity to learn and grow.
-                   
+                    A practice invested in crafting meaningful spaces was
+                    initiated in the year 1994. In the past three decades, we
+                    have worked on residential, commercial, and hospitality
+                    projects of varying scales. Our practice is stationed at the
+                    conflux of culture, craft, and architecture, capturing the
+                    intangibles that impact people. All our projects are a
+                    culmination of this understanding that we share with each of
+                    our clients and collaborators. We believe that every project
+                    comes in with an established context and our responses to
+                    them - which is a process in itself - leads to its
+                    understanding and to derive solutions which transcend into
+                    materiality. This process of decoding the intangibles is
+                    something that we completely thrive on and celebrate. Ours
+                    is a versatile client portfolio consisting of multinational
+                    companies, educational institutes, individuals with varied
+                    backgrounds - from business leaders to film personalities -
+                    entrepreneurs to influencers. Aligning with our larger
+                    purposes of engaging in collaborations to make meaningful
+                    spaces - we do get actively involved with the NGOs as well -
+                    for pro-bono work. Our work has been featured in print and
+                    digitally across various publications. We derive meaning and
+                    joy in our journey and consider every project as an
+                    opportunity to learn and grow.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-
 
           {/* <p className="card-text fw-medium ">
                 <em>
@@ -651,10 +830,8 @@ function HomeComponent() {
               </p>
             </div>
           </div> */}
-
         </div>
       </section>
-
       <section id="contact" className="Contact-section">
         <div className="contactDiv row d-flex justify-content-end m-4 mb-5">
           <div className="col-md-12 m-0 p-0">
