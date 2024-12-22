@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import ImagePopup from "./ImagePopup";
-import PdfModal from "./PdfModal";
+import ImagePopupDesktop from "./ImagePopupDesktop";
+
 
 function HomeComponent() {
   const [isOpen, setIsOpen] = useState(false);
@@ -210,7 +211,7 @@ function HomeComponent() {
           </div>
 
           {/* Conditionally show arrows only if not mobile */}
-          {/* {!isMobile && (
+           {!isMobile && (
         <>
           <button className="carousel-control-prev" aria-label="Previous">
             <span className="carousel-control-prev-icon"></span>
@@ -219,7 +220,7 @@ function HomeComponent() {
             <span className="carousel-control-next-icon"></span>
           </button>
         </>
-      )} */}
+      )} 
 
           <button
             className="carousel-control-prev"
@@ -227,7 +228,7 @@ function HomeComponent() {
             data-bs-target="#carouselDemo"
             data-bs-slide="prev"
           >
-            {/* <span className="carousel-control-prev-icon"></span> */}
+             <span className="carousel-control-prev-icon"></span> 
           </button>
           <button
             className="carousel-control-next"
@@ -235,7 +236,7 @@ function HomeComponent() {
             data-bs-target="#carouselDemo"
             data-bs-slide="next"
           >
-            {/* <span className="carousel-control-next-icon"></span> */}
+           <span className="carousel-control-next-icon"></span> 
           </button>
           <div className="carousel-indicators">
             <button
@@ -267,7 +268,9 @@ function HomeComponent() {
         <div className="text-center">
           <h2 id="work">WORKS</h2>
         </div>
-        {/* <div className="row">
+        {!isMobile ? (
+        
+        <div className="row">
                  <div className="col-sm-6">
                     <div className="card mt-4" onClick={() => openModal('AandS')}>
                         <img loading="lazy" src="/WORKS/ANU-SHASHI/27.jpg" className="img-fluid" alt="ANU & SASHI" />
@@ -303,11 +306,13 @@ function HomeComponent() {
                         <span className="fw-medium">SHANTHI & SRINIVAS</span>
                     </div>
                 </div>
-            </div> */}
+            </div>
 
-        <div className="row">
+            
+        ):(
+          <div className="row">
 
-        <div className="col-sm-4" onClick={() => openModal("AandH")}>
+          <div className="col-sm-4" onClick={() => openModal("AandH")}>
             <div className="mt-4 card-mag">
               <img
                 loading="lazy"
@@ -317,7 +322,7 @@ function HomeComponent() {
             </div>
             <div className="col clientNames text-center mt-1">
               <span className="fw-medium">
-              ANITA AND HARSHA BHOGLE'S RESIDENCE
+                ANITA AND HARSHA BHOGLE&apos;S RESIDENCE
               </span>
             </div>
           </div>
@@ -331,7 +336,7 @@ function HomeComponent() {
               />
             </div>
             <div className="col clientNames text-center mt-1">
-              <span className="fw-medium">CHARU AND SRINI'S RESIDENCE</span>
+              <span className="fw-medium">CHARU AND SRINI&apos;S RESIDENCE</span>
             </div>
           </div>
 
@@ -344,11 +349,11 @@ function HomeComponent() {
               />
             </div>
             <div className="col clientNames text-center mt-1">
-              <span className="fw-medium">ANU AND SASHI'S RESIDENCE</span>
+              <span className="fw-medium">ANU AND SASHI&apos;S RESIDENCE</span>
             </div>
           </div>
 
-          
+
           <div className="col-sm-4" onClick={() => openModal("RandP")}>
             <div className="mt-4 card-mag">
               <img
@@ -358,7 +363,7 @@ function HomeComponent() {
               />
             </div>
             <div className="col clientNames text-center mt-1">
-              <span className="fw-medium">RAMA AND PRADEEP'S RESIDENCE</span>
+              <span className="fw-medium">RAMA AND PRADEEP&apos;S RESIDENCE</span>
             </div>
           </div>
 
@@ -371,13 +376,22 @@ function HomeComponent() {
               />
             </div>
             <div className="col clientNames text-center mt-1">
-              <span className="fw-medium">SHANTI AND SRINIVAS'S RESIDENCE</span>
+              <span className="fw-medium">SHANTI AND SRINIVAS&apos;S RESIDENCE</span>
             </div>
           </div>
         </div>
+        )}
 
         {modalData && (
           <ImagePopup
+            showModal={showModal}
+            images={modalData.images}
+            closeModal={closeModal}
+          />
+        )}
+
+        {modalData && (
+          <ImagePopupDesktop
             showModal={showModal}
             images={modalData.images}
             closeModal={closeModal}
@@ -391,9 +405,9 @@ function HomeComponent() {
           <div className="row d-flex justify-content-center">
             <div className="col-sm-6">
               <a href="https://www.indiatoday.in/magazine/supplement/story/20240930-harsha-and-anita-bhogles-home-effortless-charm-2602503-2024-09-21">
-              <div className="card mt-5">
-                <img loading="lazy" src="/PUBLICATIONS/2.jpg" className="" />
-              </div>
+                <div className="card mt-5">
+                  <img loading="lazy" src="/PUBLICATIONS/2.jpg" className="" />
+                </div>
               </a>
               <div className="col clientNames text-center mt-1">
                 <span className="fw-medium">India Today</span>
@@ -402,9 +416,9 @@ function HomeComponent() {
 
             <div className="col-sm-6">
               <a href="https://www.goodhomes.co.in/home-and-design-trends/centred-around-a-courtyard-this-aziznagar-home-is-breathtaking-9107.html">
-              <div className="card mt-5">
-                <img loading="lazy" src="/PUBLICATIONS/1.jpg" className="" />
-              </div>
+                <div className="card mt-5">
+                  <img loading="lazy" src="/PUBLICATIONS/1.jpg" className="" />
+                </div>
               </a>
               <div className="col clientNames text-center mt-1">
                 <span className="fw-medium">Good Homes</span>
@@ -414,32 +428,32 @@ function HomeComponent() {
           <div className="row d-flex justify-content-center">
             <div className="col-sm-6">
               <a href="https://thearchitectsdiary.com/this-hyderabad-house-harmonizes-two-distinct-units-lalith-and-jyothi-architects/">
-              <div className="card mt-5">
-                <img loading="lazy" src="/PUBLICATIONS/6.jpg" className="" />
-              </div>
+                <div className="card mt-5">
+                  <img loading="lazy" src="/PUBLICATIONS/6.jpg" className="" />
+                </div>
               </a>
               <div className="col clientNames text-center mt-1">
-                <span className="fw-medium">The Architect's Dairy</span>
+                <span className="fw-medium">The Architect&apos;s Dairy</span>
               </div>
             </div>
 
             <div className="col-sm-6">
               <a href="">
-              <div className="card mt-5">
-                <img loading="lazy" src="/PUBLICATIONS/3.jpg" className="" />
-              </div>
+                <div className="card mt-5">
+                  <img loading="lazy" src="/PUBLICATIONS/3.jpg" className="" />
+                </div>
               </a>
               <div className="col clientNames text-center mt-1">
-                <span className="fw-medium">The Architect's Dairy</span>
+                <span className="fw-medium">The Architect&apos;s Dairy</span>
               </div>
             </div>
           </div>
           <div className="row d-flex justify-content-center">
             <div className="col-sm-6">
               <a href="https://architizer.com/projects/villa-18/">
-              <div className="card mt-5">
-                <img loading="lazy" src="/PUBLICATIONS/5.png" className="" />
-              </div>
+                <div className="card mt-5">
+                  <img loading="lazy" src="/PUBLICATIONS/5.png" className="" />
+                </div>
               </a>
               <div className="col clientNames text-center mt-1">
                 <span className="fw-medium">Architizer</span>
@@ -447,9 +461,9 @@ function HomeComponent() {
             </div>
             <div className="col-sm-6">
               <a href="https://www.archizy.com/magazines/archana-and-ramanas-house-by-lalith-and-jyothi-architects">
-              <div className="card mt-5">
-                <img loading="lazy" src="/PUBLICATIONS/4.jpg" className="" />
-              </div>
+                <div className="card mt-5">
+                  <img loading="lazy" src="/PUBLICATIONS/4.jpg" className="" />
+                </div>
               </a>
               <div className="col clientNames text-center mt-1">
                 <span className="fw-medium">Archizy</span>
@@ -459,12 +473,12 @@ function HomeComponent() {
         </div>
       </section>
 
-      <section id="magazines" className="magazine-section">
-        <div className="mag-div text-center mt-0">
+      <section id="magazines" className="magazine-section ">
+        <div className="mag-div text-center mt-0" >
           {/* <h2 id="">MAGAZINES</h2> */}
-          <div className="row">
+          <div className="row d-flex justify-content-center">
 
-            <div className="col-sm-4">
+            {/* <div className="col-sm-4" style={{display:"none"}}>
               <div className=" mt-4 card-mag">
                 <img
                   loading="lazy"
@@ -472,29 +486,29 @@ function HomeComponent() {
                   className="magazine-cover"
                 />
               </div>
-            </div>
+            </div> */}
             <div className="col-sm-4">
               <a href="https://www.goodhomes.co.in/home-and-design-trends/centred-around-a-courtyard-this-aziznagar-home-is-breathtaking-9107.html">
-              <div className=" mt-4 card-mag">
-                <img
-                  loading="lazy"
-                  src="/MAGAZINES/MAGAZINES/HOME-AND-DEISGN-TRENDS/5.jpg"
-                  className="magazine-cover"
-                />
-              </div>
+                <div className=" mt-4 card-mag">
+                  <img
+                    loading="lazy"
+                    src="/MAGAZINES/MAGAZINES/HOME-AND-DEISGN-TRENDS/5.jpg"
+                    className="magazine-cover"
+                  />
+                </div>
               </a>
 
             </div>
 
             <div className="col-sm-4">
               <a href="https://www.indiatoday.in/magazine/supplement/story/20240930-harsha-and-anita-bhogles-home-effortless-charm-2602503-2024-09-21">
-              <div className=" mt-4 card-mag">
-                <img
-                  loading="lazy"
-                  src="/MAGAZINES/MAGAZINES/INDIAN-TODAY-HOMES/4.jpg"
-                  className="magazine-cover"
-                />
-              </div>
+                <div className=" mt-4 card-mag">
+                  <img
+                    loading="lazy"
+                    src="/MAGAZINES/MAGAZINES/INDIAN-TODAY-HOMES/4.jpg"
+                    className="magazine-cover"
+                  />
+                </div>
               </a>
             </div>
           </div>
@@ -547,36 +561,63 @@ function HomeComponent() {
 
         </section> */}
 
-      <section className="profile-section mb-5">
-        <div className="row mt-2 p-1 d-flex justify-content-center text-center ">
+      <section className="profile-section">
+        <div className="row mt-2 p-1 d-flex justify-content-center text-center">
           <h2 id="profile">PROFILE</h2>
-          <div className="card mt-2 p-0 profile-card" style={{ width: "35vw" }}>
-            <img
-              loading="lazy"
-              src="/MAGAZINES/MAGAZINES/HOME-AND-DEISGN-TRENDS/pp2.jpg"
-              // className="card-img-top "
-              alt="..."
-            />
-            <div className="card-body text-start p-2 pt-3">
-              <h5 className="card-title">Lalith and Jyothi</h5>
-              <figcaption className="blockquote-footer mt-1">
-                <cite title="Source Title">Architects</cite>
-              </figcaption>
-              <p className="card-text fw-medium" style={{textAlign: "justify"}}>
-                <em>
-                A practice invested in crafting meaningful spaces was initiated in the year 1994. In the past three decades, we have worked on residential, commercial, and hospitality projects of varying scales. Our practice is stationed at the conflux of culture, craft, and architecture, capturing the intangibles that impact people. All our projects are a culmination of this understanding that we share with each of our clients and collaborators.
+          <div className="card mt-2 p-0 profile-card m-2" style={{width: "fit-content",height:"fit-content",display:"inline-block",margin:"auto"}}>
+            <div className="row g-0">
+              {/* Image Section */}
+              <div className="col-md-4">
+                <img
+                  className="img-fluid"
+                  loading="lazy"
+                  src="/MAGAZINES/MAGAZINES/HOME-AND-DEISGN-TRENDS/pp2.jpg"
+                  alt="..."
+                  style={{ height: isMobile ? "100%" : "80vh",objectFit: "cover"}}
+                />
+              </div>
+              {/* Text Section */}
+              <div className="col-md-8">
+                <div className="card-body text-start p-2 pt-3">
+                  <h5 className="card-title">Lalith and Jyothi</h5>
+                  <figcaption className="blockquote-footer mt-1">
+                    <cite title="Source Title">Architects</cite>
+                  </figcaption>
+                  <p
+                    className="card-text fw-medium"
+                    style={{ textAlign: "justify",marginRight:isMobile?"auto":"3rem" }}
+                  >
+                      A practice invested in crafting meaningful spaces was initiated in
+                      the year 1994. In the past three decades, we have worked on
+                      residential, commercial, and hospitality projects of varying
+                      scales. Our practice is stationed at the conflux of culture, craft,
+                      and architecture, capturing the intangibles that impact people. All
+                      our projects are a culmination of this understanding that we share
+                      with each of our clients and collaborators.
 
+                      We believe that every project comes in with an established context
+                      and our responses to them - which is a process in itself - leads to
+                      its understanding and to derive solutions which transcend into
+                      materiality. This process of decoding the intangibles is something
+                      that we completely thrive on and celebrate.
 
-We believe that every project comes in with an established context and our responses to them - which is a process in itself - leads to its understanding and to derive solutions which transcend into materiality. This process of decoding the intangibles is something that we completely thrive on and celebrate. 
+                      Ours is a versatile client portfolio consisting of multinational
+                      companies, educational institutes, individuals with varied
+                      backgrounds - from business leaders to film personalities -
+                      entrepreneurs to influencers. Aligning with our larger purposes of
+                      engaging in collaborations to make meaningful spaces - we do get
+                      actively involved with the NGOs as well - for pro-bono work.
 
-
-Ours is a versatile client portfolio consisting of multinational companies, educational institutes, individuals with varied backgrounds - from business leaders to film personalities - entrepreneurs to influencers. Aligning with our larger purposes of engaging in collaborations to make meaningful spaces - we do get actively involved with the NGOs as well - for pro-bono work.in  
-
-Our work has been featured in print and digitally across various publications. We derive meaning and joy in our journey and consider every project as an opportunity to learn and grow.
-                </em>
-              </p>
+                      Our work has been featured in print and digitally across various
+                      publications. We derive meaning and joy in our journey and consider
+                      every project as an opportunity to learn and grow.
+                   
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
+
 
           {/* <p className="card-text fw-medium ">
                 <em>
@@ -614,7 +655,7 @@ Our work has been featured in print and digitally across various publications. W
         </div>
       </section>
 
-      <section id="contact" className="Contact-section mt-mb-5 ">
+      <section id="contact" className="Contact-section">
         <div className="contactDiv row d-flex justify-content-end m-4 mb-5">
           <div className="col-md-12 m-0 p-0">
             <div className="mt-4 mt-md-0">
