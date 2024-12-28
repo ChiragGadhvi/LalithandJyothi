@@ -12,6 +12,11 @@ function HomeComponent() {
   const handleLinkClick = () => {
     setIsOpen(false);
   };
+  
+  const AandH_Web = Array.from(
+    { length: 9 },
+    (_, index) => `/WORKS/ANITA_HARSHA/${index + 1}.jpg`
+  );
 
   const AandS_Web = Array.from(
     { length: 34 },
@@ -84,6 +89,9 @@ function HomeComponent() {
       case "SandS_Web":
         setModalData({ images: SandS_Web });
         break;
+        case "AandH_Web":
+          setModalData({ images: AandH_Web });
+          break;
       default:
         setModalData(null);
     }
@@ -414,6 +422,32 @@ function HomeComponent() {
         {!isMobile ? (
           <div className="row">
             <div className="col-sm-6">
+              <div className="card mt-4" onClick={() => openModal("AandH_Web")}>
+                <img
+                  loading="lazy"
+                  src="/WORKS/ANITA_HARSHA/home.jpg"
+                  className=""
+                />
+              </div>
+              <div className="col clientNames text-center mt-1">
+                <span className="fw-medium">ANITA AND HARSHA BHOGLE'S RESIDENCE</span>
+              </div>
+            </div>
+
+            <div className="col-sm-6">
+              <div className="card mt-4" onClick={() => openModal("CandS_Web")}>
+                <img
+                  loading="lazy"
+                  src="/WORKS/CHARU-SRINIVASAN/home.jpg"
+                  className=""
+                />
+              </div>
+              <div className="col clientNames text-center mt-1">
+                <span className="fw-medium">CHARU AND SRINI'S RESIDENCE</span>
+              </div>
+            </div>
+
+            <div className="col-sm-6">
               <div className="card mt-4" onClick={() => openModal("AandS_Web")}>
                 <img
                   loading="lazy"
@@ -423,31 +457,14 @@ function HomeComponent() {
                 />
               </div>
               <div className="col clientNames text-center mt-1">
-                <span className="fw-medium">ANU & SASHI</span>
+                <span className="fw-medium">
+                  ANU AND SASHI&apos;S RESIDENCE
+                </span>
               </div>
             </div>
 
             <div className="col-sm-6">
-              <div
-                className="card mt-4"
-                onClick={() => openModal("CandS_Web")}
-              >
-                <img
-                  loading="lazy"
-                  src="/WORKS/CHARU-SRINIVASAN/home.jpg"
-                  className=""
-                />
-              </div>
-              <div className="col clientNames text-center mt-1">
-                <span className="fw-medium">CHARU & SRINIVAS</span>
-              </div>
-            </div>
-
-            <div className="col-sm-6">
-              <div
-                className="card mt-4"
-                onClick={() => openModal("RandP_Web")}
-              >
+              <div className="card mt-4" onClick={() => openModal("RandP_Web")}>
                 <img
                   loading="lazy"
                   src="/WORKS/RAMA-PRADEEP/home.jpg"
@@ -455,15 +472,13 @@ function HomeComponent() {
                 />
               </div>
               <div className="col clientNames text-center mt-1">
-                <span className="fw-medium">RAMA & PRADEEP</span>
+                <span className="fw-medium">RAMA AND PRADEEP'S RESIDENCE</span>
               </div>
             </div>
 
+            <div className="row d-flex justify-content-center">
             <div className="col-sm-6">
-              <div
-                className="card mt-4"
-                onClick={() => openModal("SandS_Web")}
-              >
+              <div className="card mt-4" onClick={() => openModal("SandS_Web")}>
                 <img
                   loading="lazy"
                   src="/WORKS/SHANTHI-SRINIVAS/home.jpg"
@@ -471,9 +486,13 @@ function HomeComponent() {
                 />
               </div>
               <div className="col clientNames text-center mt-1">
-                <span className="fw-medium">SHANTHI & SRINIVAS</span>
+                <span className="fw-medium">
+                  SHANTI AND SRINIVAS'S RESIDENCE
+                </span>
               </div>
             </div>
+            </div>
+
           </div>
         ) : (
           <div className="row">
@@ -570,7 +589,7 @@ function HomeComponent() {
           />
         )}
       </section>
-      
+
       <section id="publishing-section">
         <div className="text-center mt-2">
           <h2 id="publishing">PUBLICATIONS</h2>
@@ -683,7 +702,7 @@ function HomeComponent() {
           </div>
         </div>
       </section>
-      
+
       {/* <section className="blogs-section mt-5" >
             <div className="blog-div text-center mt-0">
                 <h2 id="blog">BLOGS</h2>

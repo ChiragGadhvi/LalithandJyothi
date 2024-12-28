@@ -116,7 +116,7 @@ section {
   background-color: #ffffff; 
 }
 
- @keyframes appear {
+ /* @keyframes appear {
   from {
     opacity: 0;
     scale: 0.8;
@@ -125,7 +125,7 @@ section {
     opacity: 1;
     scale: 1;
   }
-} 
+}  */
 
 h2#work, #publishing, #contact, #blog, #profile {
   scroll-margin-top: 100px; 
@@ -135,9 +135,9 @@ h2#work, #publishing, #contact, #blog, #profile {
   transition-duration: 800ms;
 }
 
-.card img:is(:hover, :focus) {
+/* .card img:is(:hover, :focus) {
   transform: scale(0.98);
-}
+} */
 
 /* Magazine Styles */
 .card-mag {
