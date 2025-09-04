@@ -33,7 +33,7 @@ html, body {
 }
 
 section {
-  padding: 1rem;
+  padding: .7rem;
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 20%; 

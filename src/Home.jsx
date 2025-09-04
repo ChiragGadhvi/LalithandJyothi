@@ -677,7 +677,7 @@ function HomeComponent() {
               </div>
             </div> */}
             <div className="col-sm-4">
-              <a href="https://www.goodhomes.co.in/home-and-design-trends/centred-around-a-courtyard-this-aziznagar-home-is-breathtaking-9107.html">
+              <a href="https://www.goodhomes.co.in/home-and-design-trends/centred-around-a-courtyard-this-aziznagar-home-is-breathtaking-9107.html" target="_blank" rel="noopener noreferrer">
                 <div className=" mt-4 card-mag">
                   <img
                     loading="lazy"
@@ -689,7 +689,7 @@ function HomeComponent() {
             </div>
 
             <div className="col-sm-4">
-              <a href="https://www.indiatoday.in/magazine/supplement/story/20240930-harsha-and-anita-bhogles-home-effortless-charm-2602503-2024-09-21">
+              <a href="https://www.indiatoday.in/magazine/supplement/story/20240930-harsha-and-anita-bhogles-home-effortless-charm-2602503-2024-09-21" target="_blank" rel="noopener noreferrer">
                 <div className=" mt-4 card-mag">
                   <img
                     loading="lazy"
@@ -749,8 +749,8 @@ function HomeComponent() {
 
         </section> */}
       <section className="profile-section">
-        <div className="row mt-2 p-1 d-flex justify-content-center text-start">
-          <h2 id="profile">PROFILE</h2>
+        <div className="row mt-2 p-1 d-flex justify-content-center text-center">
+          <h2 id="profile"className="text-start mb-4" >PROFILE</h2>
           <div
             className="card mt-2 p-0 profile-card m-2"
             style={{
@@ -770,7 +770,7 @@ function HomeComponent() {
                   alt="..."
                   style={{
                     height: isMobile ? "100%" : "80vh",
-                    objectFit: "cover",
+                    objectFit: "contain",
                   }}
                 />
               </div>
@@ -852,7 +852,7 @@ function HomeComponent() {
         </div>
       </section>
       <section id="contact" className="Contact-section">
-        <div className="contactDiv row d-flex justify-content-end m-4 mb-5">
+        <div className="contactDiv row d-flex justify-content-end m-1 mb-5">
           <div className="col-md-12 m-0 p-0">
             <div className="mt-4 mt-md-0">
               <h2>Contact</h2>
