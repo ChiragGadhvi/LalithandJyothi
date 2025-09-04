@@ -88,7 +88,7 @@ section {
   top: 0;
   z-index: 1050;
   color: white;
-  padding: 0px 50px;
+  /* padding: 0px 50px; */
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
@@ -390,7 +390,7 @@ h2 {
 
 @media (min-width: 1200px) {
   h2 {
-    font-size: 2.2em;
+    font-size: 1.5em;
   }
 }
 

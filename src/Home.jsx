@@ -416,7 +416,7 @@ function HomeComponent() {
         </div>
       </section>
       <section className="works-section">
-        <div className="text-center">
+        <div className="text-start ">
           <h2 id="work">WORKS</h2>
         </div>
         {!isMobile ? (
@@ -429,7 +429,7 @@ function HomeComponent() {
                   className=""
                 />
               </div>
-              <div className="col clientNames text-center mt-1">
+              <div className="col clientNames text-start mt-1">
                 <span className="fw-medium">ANITA AND HARSHA BHOGLE'S RESIDENCE</span>
               </div>
             </div>
@@ -442,7 +442,7 @@ function HomeComponent() {
                   className=""
                 />
               </div>
-              <div className="col clientNames text-center mt-1">
+              <div className="col clientNames text-start mt-1">
                 <span className="fw-medium">CHARU AND SRINI'S RESIDENCE</span>
               </div>
             </div>
@@ -456,7 +456,7 @@ function HomeComponent() {
                   alt="ANU & SASHI"
                 />
               </div>
-              <div className="col clientNames text-center mt-1">
+              <div className="col clientNames text-start mt-1">
                 <span className="fw-medium">
                   ANU AND SASHI&apos;S RESIDENCE
                 </span>
@@ -471,7 +471,7 @@ function HomeComponent() {
                   className=""
                 />
               </div>
-              <div className="col clientNames text-center mt-1">
+              <div className="col clientNames text-start mt-1">
                 <span className="fw-medium">RAMA AND PRADEEP'S RESIDENCE</span>
               </div>
             </div>
@@ -485,7 +485,7 @@ function HomeComponent() {
                   className=""
                 />
               </div>
-              <div className="col clientNames text-center mt-1">
+              <div className="col clientNames text-start mt-1">
                 <span className="fw-medium">
                   SHANTI AND SRINIVAS'S RESIDENCE
                 </span>
@@ -504,7 +504,7 @@ function HomeComponent() {
                   className="magazine-cover"
                 />
               </div>
-              <div className="col clientNames text-center mt-1">
+              <div className="col clientNames text-start mt-1">
                 <span className="fw-medium">
                   ANITA AND HARSHA BHOGLE&apos;S RESIDENCE
                 </span>
@@ -519,7 +519,7 @@ function HomeComponent() {
                   className="magazine-cover"
                 />
               </div>
-              <div className="col clientNames text-center mt-1">
+              <div className="col clientNames text-start mt-1">
                 <span className="fw-medium">
                   CHARU AND SRINI&apos;S RESIDENCE
                 </span>
@@ -534,7 +534,7 @@ function HomeComponent() {
                   className="magazine-cover"
                 />
               </div>
-              <div className="col clientNames text-center mt-1">
+              <div className="col clientNames text-start mt-1">
                 <span className="fw-medium">
                   ANU AND SASHI&apos;S RESIDENCE
                 </span>
@@ -549,7 +549,7 @@ function HomeComponent() {
                   className="magazine-cover"
                 />
               </div>
-              <div className="col clientNames text-center mt-1">
+              <div className="col clientNames text-start mt-1">
                 <span className="fw-medium">
                   RAMA AND PRADEEP&apos;S RESIDENCE
                 </span>
@@ -564,7 +564,7 @@ function HomeComponent() {
                   className="magazine-cover"
                 />
               </div>
-              <div className="col clientNames text-center mt-1">
+              <div className="col clientNames text-start mt-1">
                 <span className="fw-medium">
                   SHANTI AND SRINIVAS&apos;S RESIDENCE
                 </span>
@@ -591,7 +591,7 @@ function HomeComponent() {
       </section>
 
       <section id="publishing-section">
-        <div className="text-center mt-2">
+        <div className="text-start mt-2">
           <h2 id="publishing">PUBLICATIONS</h2>
           <div className="row d-flex justify-content-center">
             <div className="col-sm-6">
@@ -600,7 +600,7 @@ function HomeComponent() {
                   <img loading="lazy" src="/PUBLICATIONS/2.jpg" className="" />
                 </div>
               </a>
-              <div className="col clientNames text-center mt-1">
+              <div className="col clientNames text-start mt-1">
                 <span className="fw-medium">India Today</span>
               </div>
             </div>
@@ -611,7 +611,7 @@ function HomeComponent() {
                   <img loading="lazy" src="/PUBLICATIONS/1.jpg" className="" />
                 </div>
               </a>
-              <div className="col clientNames text-center mt-1">
+              <div className="col clientNames text-start mt-1">
                 <span className="fw-medium">Good Homes</span>
               </div>
             </div>
@@ -623,7 +623,7 @@ function HomeComponent() {
                   <img loading="lazy" src="/PUBLICATIONS/6.jpg" className="" />
                 </div>
               </a>
-              <div className="col clientNames text-center mt-1">
+              <div className="col clientNames text-start mt-1">
                 <span className="fw-medium">The Architect&apos;s Dairy</span>
               </div>
             </div>
@@ -634,7 +634,7 @@ function HomeComponent() {
                   <img loading="lazy" src="/PUBLICATIONS/3.jpg" className="" />
                 </div>
               </a>
-              <div className="col clientNames text-center mt-1">
+              <div className="col clientNames text-start mt-1">
                 <span className="fw-medium">The Architect&apos;s Dairy</span>
               </div>
             </div>
@@ -646,7 +646,7 @@ function HomeComponent() {
                   <img loading="lazy" src="/PUBLICATIONS/5.png" className="" />
                 </div>
               </a>
-              <div className="col clientNames text-center mt-1">
+              <div className="col clientNames text-start mt-1">
                 <span className="fw-medium">Architizer</span>
               </div>
             </div>
@@ -656,7 +656,7 @@ function HomeComponent() {
                   <img loading="lazy" src="/PUBLICATIONS/4.jpg" className="" />
                 </div>
               </a>
-              <div className="col clientNames text-center mt-1">
+              <div className="col clientNames text-start mt-1">
                 <span className="fw-medium">Archizy</span>
               </div>
             </div>
@@ -664,7 +664,7 @@ function HomeComponent() {
         </div>
       </section>
       <section id="magazines" className="magazine-section ">
-        <div className="mag-div text-center mt-0">
+        <div className="mag-div text-start mt-0">
           {/* <h2 id="">MAGAZINES</h2> */}
           <div className="row d-flex justify-content-center">
             {/* <div className="col-sm-4" style={{display:"none"}}>
@@ -749,7 +749,7 @@ function HomeComponent() {
 
         </section> */}
       <section className="profile-section">
-        <div className="row mt-2 p-1 d-flex justify-content-center text-center">
+        <div className="row mt-2 p-1 d-flex justify-content-center text-start">
           <h2 id="profile">PROFILE</h2>
           <div
             className="card mt-2 p-0 profile-card m-2"
@@ -778,9 +778,9 @@ function HomeComponent() {
               <div className="col-md-8">
                 <div className="card-body text-start p-2 pt-3">
                   <h5 className="card-title">Lalith and Jyothi</h5>
-                  <figcaption className="blockquote-footer mt-1">
-                    <cite title="Source Title">Architects</cite>
-                  </figcaption>
+                  {/* <figcaption className="blockquote-footer mt-1"> */}
+                    <p title="Source Title">- Architects</p>
+                  {/* </figcaption> */}
                   <p
                     className="card-text fw-medium"
                     style={{
