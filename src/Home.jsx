@@ -595,7 +595,7 @@ function HomeComponent() {
           <h2 id="publishing">PUBLICATIONS</h2>
           <div className="row d-flex justify-content-center">
             <div className="col-sm-6">
-              <a href="https://www.indiatoday.in/magazine/supplement/story/20240930-harsha-and-anita-bhogles-home-effortless-charm-2602503-2024-09-21">
+              <a href="https://www.indiatoday.in/magazine/supplement/story/20240930-harsha-and-anita-bhogles-home-effortless-charm-2602503-2024-09-21" target="_blank" rel="noopener noreferrer">
                 <div className="card mt-5">
                   <img loading="lazy" src="/PUBLICATIONS/2.jpg" className="" />
                 </div>
@@ -606,7 +606,7 @@ function HomeComponent() {
             </div>
 
             <div className="col-sm-6">
-              <a href="https://www.goodhomes.co.in/home-and-design-trends/centred-around-a-courtyard-this-aziznagar-home-is-breathtaking-9107.html">
+              <a href="https://www.goodhomes.co.in/home-and-design-trends/centred-around-a-courtyard-this-aziznagar-home-is-breathtaking-9107.html" target="_blank" rel="noopener noreferrer">
                 <div className="card mt-5">
                   <img loading="lazy" src="/PUBLICATIONS/1.jpg" className="" />
                 </div>
@@ -618,7 +618,7 @@ function HomeComponent() {
           </div>
           <div className="row d-flex justify-content-center">
             <div className="col-sm-6">
-              <a href="https://thearchitectsdiary.com/this-hyderabad-house-harmonizes-two-distinct-units-lalith-and-jyothi-architects/">
+              <a href="https://thearchitectsdiary.com/this-hyderabad-house-harmonizes-two-distinct-units-lalith-and-jyothi-architects/" target="_blank" rel="noopener noreferrer">
                 <div className="card mt-5">
                   <img loading="lazy" src="/PUBLICATIONS/6.jpg" className="" />
                 </div>
@@ -629,7 +629,7 @@ function HomeComponent() {
             </div>
 
             <div className="col-sm-6">
-              <a href="">
+              <a href="https://thearchitectsdiary.com/layout-of-the-house-was-reinvented-to-create-well-spaced-rooms-lalith-and-jyothi-architects/" target="_blank" rel="noopener noreferrer">
                 <div className="card mt-5">
                   <img loading="lazy" src="/PUBLICATIONS/3.jpg" className="" />
                 </div>
@@ -641,7 +641,7 @@ function HomeComponent() {
           </div>
           <div className="row d-flex justify-content-center">
             <div className="col-sm-6">
-              <a href="https://architizer.com/projects/villa-18/">
+              <a href="https://architizer.com/projects/villa-18/" target="_blank" rel="noopener noreferrer">
                 <div className="card mt-5">
                   <img loading="lazy" src="/PUBLICATIONS/5.png" className="" />
                 </div>
@@ -651,7 +651,7 @@ function HomeComponent() {
               </div>
             </div>
             <div className="col-sm-6">
-              <a href="https://www.archizy.com/magazines/archana-and-ramanas-house-by-lalith-and-jyothi-architects">
+              <a href="https://www.archizy.com/magazines/archana-and-ramanas-house-by-lalith-and-jyothi-architects" target="_blank" rel="noopener noreferrer">
                 <div className="card mt-5">
                   <img loading="lazy" src="/PUBLICATIONS/4.jpg" className="" />
                 </div>
@@ -865,7 +865,7 @@ function HomeComponent() {
 
               <div className="row align-items-center mt-2 p-0">
                 <div className="col-12 col-md-auto d-flex align-items-center mb-2 mt-2 mb-md-0">
-                  <h6 className="p-0 m-0 fw-medium">info@lalithjyothi.com</h6>
+                  <h6 className="p-0 m-0 fw-medium">Lmitta70@gmail.com</h6>
                 </div>
 
                 <div className="col-12 col-md-auto d-flex align-items-center mt-2">

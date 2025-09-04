@@ -7,9 +7,25 @@
   padding: 0;
 }
 
+/* Regular Century Gothic */
+@font-face {
+  font-family: 'CenturyGothic';
+  src: url('./fonts/centurygothic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Bold Century Gothic */
+@font-face {
+  font-family: 'CenturyGothic';
+  src: url('./fonts/centurygothic_bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 html, body {
   background-color: white;
-  font-family: 'Century Gothic', sans-serif;
+  font-family: 'CenturyGothic', sans-serif;
 }
 
 ::-webkit-scrollbar {
