@@ -1,7 +1,7 @@
 :root {
   background-color: #ffffff;
   margin: 0 auto;
-  font-family: none;
+  font-family: 'CenturyGothic', Arial, sans-serif; /* ✅ Added fallback fonts */
   scroll-behavior: smooth;
   font-size: 1rem; /* Base font size */
   padding: 0;
@@ -10,18 +10,21 @@
 /* Regular Century Gothic */
 @font-face {
   font-family: 'CenturyGothic';
-  src: url('./fonts/centurygothic.ttf') format('truetype');
+  src: url('./fonts/centurygothic.woff2') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap; /* ✅ Ensures fallback text shows until font loads */
 }
 
 /* Bold Century Gothic */
 @font-face {
   font-family: 'CenturyGothic';
-  src: url('./fonts/centurygothic_bold.ttf') format('truetype');
+  src: url('./fonts/centurygothic_bold.woff2') format('truetype');
   font-weight: bold;
   font-style: normal;
+  font-display: swap; /* ✅ Same optimization for bold variant */
 }
+
 
 html, body {
   background-color: white;
@@ -462,5 +465,38 @@ h2 {
 @media (max-width: 768px) {
   .btn-close {
     font-size: 1.5rem !important;
+  }
+}
+
+/* Default font size for contact text */
+.contact-info {
+  font-size: 1rem; /* mobile-first */
+}
+
+/* Large devices: 1200px and above */
+@media (min-width: 1200px) {
+  .contact-info {
+    font-size: 0.95rem; /* slightly smaller than default */
+  }
+}
+
+/* Extra large devices: 1600px and above */
+@media (min-width: 1600px) {
+  .contact-info {
+    font-size: 0.9rem;
+  }
+}
+
+/* Ultra wide screens: 1920px and above */
+@media (min-width: 1920px) {
+  .contact-info {
+    font-size: 0.85rem;
+  }
+}
+
+/* 4K screens: 3840px and above */
+@media (min-width: 3840px) {
+  .contact-info {
+    font-size: 0.8rem;
   }
 }
